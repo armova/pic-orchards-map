@@ -1,0 +1,363 @@
+<button class="close-panel" id="toMapBtn"><i class="fa fa-angle-double-left"></i></button>
+<div class="panel panel-center panel-success">
+  <div class="panel-head">
+    Registrar una huerta
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label for="orchardName">Nombre del huerto *</label>
+        <input type="text" class="form-control" id="orchardName" placeholder="Mi huerta" required>
+      </div>
+      <div class="form-group">
+        <label for="orchardAttendant">Nombre del encargado *</label>
+        <input type="text" class="form-control" id="orchardAttendant" placeholder="José Ramirez" required>
+      </div>
+      <!-- <div class="form-group">
+        <label for="orchardDescription">Descripción *</label>
+        <textarea class="form-control" id="orchardDescription" placeholder=""></textarea>
+      </div> -->
+      <div class="form-group">
+        <label for="orchardPhone">Teléfono de contacto *</label>
+        <div class="input-group">
+          <span class="input-group-addon" id=""><i class="fa fa-phone"></i></span>
+          <input type="text" class="form-control" id="orchardPhone" placeholder="8890-0000" required aria-describedby="">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="orchardEmail">Correo Electrónico</label>
+        <div class="input-group">
+          <span class="input-group-addon" id=""><i class="fa fa-envelope-o"></i></span>
+          <input type="text" class="form-control" id="orchardEmail" placeholder="info@mihuerta.com" aria-describedby="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="orchardWeb">Sitio Web</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="orchardWeb" placeholder="mihuerta"  aria-describedby="">
+          <span class="input-group-addon" id="">.com</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="orchardFb">Facebook</label>
+        <div class="input-group">
+          <span class="input-group-addon" id="">facebook.com/</span>
+          <input type="text" class="form-control" id="orchardFb" placeholder="mihuerta" aria-describedby="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="orchardSchedule">Horario de Disponibilidad *</label>
+        <input type="text" class="form-control" id="orchardSchedule" placeholder="Lunes a Viernes de 8am a 6pm">
+      </div>
+
+      <div class="form-group">
+        <label for="orchardCharacteristics">Características del proyecto *</label>
+       
+        <div class="radio radio-success">
+          <input type="radio" name="orchardCharacteristics" id="orchardCharacteristics1" value="Privado" checked="">
+          <label for="orchardCharacteristics1">
+              Privado
+          </label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardCharacteristics" id="orchardCharacteristics2" value="Comunitario">
+          <label for="orchardCharacteristics2">
+              Comunitario
+          </label>
+        </div> 
+      </div>
+
+      <div class="form-group">
+        <label for="orchardCropTypology">Tipología de cultivo *</label>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology1" value="En macetas" checked>
+          <label for="orchardCropTypology1">En macetas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology2" value="En tierra">
+          <label for="orchardCropTypology2">En tierra</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology3" value="Vertical">
+          <label for="orchardCropTypology3">Vertical</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology4" value="Hidropónico">
+          <label for="orchardCropTypology4">Hidropónico</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology5" value="Acuapónico">
+          <label for="orchardCropTypology5">Acuapónico</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology6" value="Aeropónico">
+          <label for="orchardCropTypology6">Aeropónico</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology7" value="Organopónico">
+          <label for="orchardCropTypology7">Organopónico </label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology8" value="Semilleros/brotes">
+          <label for="orchardCropTypology8">Semilleros/brotes</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCropTypology" id="orchardCropTypology9" value="invernadero">
+          <label for="orchardCropTypology9">Invernadero</label>
+        </div>  
+      </div>
+
+       <div class="form-group">
+        <label for="orchardSize">Tamaño de la huerta *</label>
+
+        <div class="radio radio-success">
+          <input type="radio" name="orchardSize" id="orchardSize1" value="Pequeño 0-2x2m" checked>
+          <label for="orchardSize1">Pequeño 0-2x2m</label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardSize" value="Mediano 2x2 - 5x5m" id="orchardSize2">
+          <label for="orchardSize2">Mediano 2x2 - 5x5m</label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardSize" value="Grande 5x5 - 10x10m" id="orchardSize3">
+          <label for="orchardSize3">Grande 5x5 - 10x10m</label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardSize" value="Extendido" id="orchardSize4">
+          <label for="orchardSize4">Extendido</label>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="orchardCrops">¿Que cultivan? *</label>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops1" value="Hortalizas de hoja">
+          <label for="orchardCrops1">Hortalizas de hoja<small class="text-dimmed"> (acelga, endibia, escarola, espinaca, hinojo, lechuga, achicoria, kale...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops2" value="Coles">
+          <label for="orchardCrops2">Coles<small class="text-dimmed"> (repollo, col, mostaza, brócoli, coliflor, berza...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops3" value="Hortalizas de raíz">
+          <label for="orchardCrops3">Hortalizas de raíz <small class="text-dimmed">(zanahoria, jengibre, nabo, rábano, remolacha...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops4" value="Hortalizas de tallo y flor">
+          <label for="orchardCrops4">Hortalizas de tallo y flor <small class="text-dimmed">(apio, hinojo, espárragos, alcachofa, girasol...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops5" value="Hortalizas de fruto">
+          <label for="orchardCrops5">Hortalizas de fruto <small class="text-dimmed">(berenjena, calabacín, calabaza, aguacate, chayote, pepino, chiles, tomate...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops6" value="Tubérculos">
+          <label for="orchardCrops6">Tubérculos <small class="text-dimmed">(yuca, papas, batata, ñame, malanga, chufa, tupinambo)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops7" value="Bulbos">
+          <label for="orchardCrops7">Bulbos <small class="text-dimmed">(cebolla, cebollín, ajo, puerro...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops8" value="Leguminosas">
+          <label for="orchardCrops8">Leguminosas <small class="text-dimmed">(frijoles, guisantes, habas, judías, lentejas, garbanzos...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops9" value="Frutales">
+          <label for="orchardCrops9">Frutales <small class="text-dimmed">(limón, lima, naranja, manzana, níspero, mango, fresa, melón, mora...)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops10" value="Café">
+          <label for="orchardCrops10">Café</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops11" value="Hongos">
+          <label for="orchardCrops11">Hongos</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops12" value="Hierbas aromáticas">
+          <label for="orchardCrops12">Hierbas aromáticas <small class="text-dimmed">(perejil, cualntro, mejorana, melisa, menta, hierbabuena, janilama, orégano, salvia, tomillo, zacate limón, estragón, laurel, romero, albahaca, lavanda, ajenjo)</small></label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardCrops" id="orchardCrops13" value="Plantas medicinales">
+          <label for="orchardCrops13">Plantas medicinales <small class="text-dimmed">(áloe, moringa, jazmín, indio desnudo...)</small></label>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="orchardSpecials">Productos especiales</label>
+          
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials1" value="Especies criollas">
+          <label for="orchardSpecials1">Especies criollas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials2" value="Especies exóticas">
+          <label for="orchardSpecials2">Especies exóticas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials3" value="Conservas">
+          <label for="orchardSpecials3">Conservas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials4" value="Germinados">
+          <label for="orchardSpecials4">Germinados</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials5" value="Productos deshidratados (ej. especias)">
+          <label for="orchardSpecials5">Productos deshidratados <small class="text-dimmed">(ej. especias)</small></label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials6" value="Producción de aceites esenciales">
+          <label for="orchardSpecials6">Producción de aceites esenciales</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials7" value="Producción de vinagre">
+          <label for="orchardSpecials7">Producción de vinagre</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials8" value="Producción de levadura madre">
+          <label for="orchardSpecials8">Producción de levadura madre</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials9" value="Producción de kefir">
+          <label for="orchardSpecials9">Producción de kefir</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials10" value="Producción de kombucha o fermentados">
+          <label for="orchardSpecials10">Producción de kombucha o fermentados</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSpecials" id="orchardSpecials11" value="Otros">
+          <label for="orchardSpecials11">Otros productos</label>
+          <textarea id="orchardSpecials12" name="orchardSpecials" class="form-control disabled" placeholder="Indique cuáles otros productos (Ej: Artesanales, caseros)"></textarea>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="orchardConcepts">Conceptos de cultivo</label>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts1" value="Certificación orgánica">
+          <label for="orchardConcepts1">Certificación orgánica</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts2" value="Certificación de permacultura">
+          <label for="orchardConcepts2">Certificación de permacultura</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts3" value="Certificación biodinámica">
+          <label for="orchardConcepts3">Certificación biodinámica</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts4" value="No agroquímicos">
+          <label for="orchardConcepts4">No agroquímicos</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts5" value="No transegénicos - comprobado">
+          <label for="orchardConcepts5">No transegénicos - comprobado</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts6" value="Biointensiva">
+          <label for="orchardConcepts6">Biointensiva</label>
+        </div>
+         <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardConcepts" id="orchardConcepts7" value="Otros">
+          <label for="orchardConcepts7">Otros</label>
+          <textarea id="orchardConcepts8" name="orchardConcepts" class="form-control disabled" placeholder="Indique cuáles otros conceptos de cultivo"></textarea>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="orchardSharing">De nuestra huerta compartimos *</label>
+       
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing1" value="Productos de la tierra">
+          <label for="orchardSharing1">Productos de la tierra</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing2" value="Plantas">
+          <label for="orchardSharing2">Plantas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing3" value="Herramientas">
+          <label for="orchardSharing3">Herramientas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing4" value="Semillas">
+          <label for="orchardSharing4">Semillas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing5" value="Conocimiento técnico/experiencia">
+          <label for="orchardSharing5">Conocimiento técnico/experiencia</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing6" value="Abono">
+          <label for="orchardSharing6">Abono</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing7" value="Mano de obra">
+          <label for="orchardSharing7">Mano de obra</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing8" value="Uso de la compostera">
+          <label for="orchardSharing8">Uso de la compostera</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing9" value="Recogemos restos de jardinería">
+          <label for="orchardSharing9">Recogemos restos de jardinería</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardSharing" id="orchardSharing10" value="Otros">
+          <label for="orchardSharing10">Otros</label>
+          <textarea name="orchardSharing" class="form-control disabled" placeholder="Indique qué comparten de su huerta, (Ej:Conocimientos, semillas)"></textarea>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="orchardHelp">Necesitamos apoyo con</label>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardHelp" id="orchardHelp1" value="Materiales y herramientas">
+          <label for="orchardHelp1">Materiales y herramientas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardHelp" id="orchardHelp2" value="Mano de obra">
+          <label for="orchardHelp2">Mano de obra</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardHelp" id="orchardHelp3" value="Semillas y plantas">
+          <label for="orchardHelp3">Semillas y plantas</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardHelp" id="orchardHelp4" value="Asesoría">
+          <label for="orchardHelp4">Asesoría</label>
+        </div>
+        <div class="checkbox checkbox-success">
+          <input type="checkbox" name="orchardHelp" id="orchardHelp5" value="Otros">
+          <label for="orchardHelp5">Otros</label>
+          <textarea name="orchardHelp" class="form-control disabled" placeholder="Indique con qué necesita apoyo (Ej:Recetas naturales, anti-plagas)"></textarea>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="orchardMarket">Huerto abierto, comparte libremente y gratuitamente? *</label>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardMarket" id="orchardMarket1" value="Sí">
+          <label for="orchardMarket1">Sí</label>
+        </div>
+        <div class="radio radio-success">
+          <input type="radio" name="orchardMarket" id="orchardMarket2" value="No. Comercializamos nuestros productos y servicios.">
+          <label for="orchardMarket2">No. Comercializamos nuestros productos y servicios.</label>
+        </div>
+
+      </div>
+      <button class="btn btn-default btn-lg text-success" id="registerFormBtn">Registrar <i class="fa fa-check"></i></button>
+    </form>
+  </div>
+  <div class="panel-footer text-center"><i class="fa fa-chevron-down"></i></div>
+</div>
